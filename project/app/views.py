@@ -15,9 +15,9 @@ def homepage(request):
     #return HttpResponse(post_lists)
     return render(request,'index.html',locals())
 def showpost(request,slug):
-    try:
+    #try:
         post = Post.objects.get(slug = slug)
         if post != None:
             return render(request,'post.html',locals())
-    except:
-        return redirect('/')
+    #except Exception as e:
+        #return redirect('/')
