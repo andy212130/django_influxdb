@@ -14,3 +14,10 @@ def homepage(request):
     #    post_lists.append("NO.{}:".format(str(count)) + str(post) +"<br>")
     #return HttpResponse(post_lists)
     return render(request,'index.html',locals())
+def showpost(request,slug):
+    try:
+        post = Post.objects.get(slug = slug)
+        if post != None:
+            return render(request,'post.html',locals())
+    except:
+        return redirect('/')
