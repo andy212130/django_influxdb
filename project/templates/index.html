@@ -11,7 +11,12 @@
 	<hr>
 	{% for post in posts %}
 		<p style='font-family:serif;font-size:16pt;font-weight:bold;'>
-			<a href='/post/{{post.slug}}'>{{post.title}}</a>
+			<form action="/test/{{post.slug}}/" method="post">
+				{% csrf_token %}
+				<input type="submit" value="{{post.title}}">
+			</form>
+
+				<!-- <a href='/post/{{post.slug}}'>{{post.title}}</a>-->
 		</p>
 	<!--	<p style='font-family:serif;font-size:16pt;letter-spacing:11pt;'>
 			{{post.body}}

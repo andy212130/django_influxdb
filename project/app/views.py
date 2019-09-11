@@ -14,10 +14,21 @@ def homepage(request):
     #    post_lists.append("NO.{}:".format(str(count)) + str(post) +"<br>")
     #return HttpResponse(post_lists)
     return render(request,'index.html',locals())
-def showpost(request,slug):
-    #try:
+
+def showpost(request, slug):
+    print("12345")
+    try:
         post = Post.objects.get(slug = slug)
+        logger = logging.getLogger('django')
+        logger.info(post)
+        print("POST = " + post)
         if post != None:
             return render(request,'post.html',locals())
-    #except Exception as e:
+    except Exception as e:
+        logger = logging.getLogger('django')
+        logger.info("This is an error msg")
         #return redirect('/')
+
+def posttest(request):
+    post = Post.objects.all()
+    return render(request,'test.html',locals())
