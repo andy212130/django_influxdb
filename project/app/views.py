@@ -19,15 +19,11 @@ def showpost(request, slug):
     print("12345")
     try:
         post = Post.objects.get(slug = slug)
-        logger = logging.getLogger('django')
-        logger.info(post)
-        print("POST = " + post)
+        print("POST = " + str(post))
         if post != None:
             return render(request,'post.html',locals())
     except Exception as e:
-        logger = logging.getLogger('django')
-        logger.info("This is an error msg")
-        #return redirect('/')
+        return redirect('/')
 
 def posttest(request):
     post = Post.objects.all()

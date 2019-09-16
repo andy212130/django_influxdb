@@ -345,3 +345,118 @@
 [2019-09-12 12:30:54,004] [INFO] "POST /post/test6/ HTTP/1.1" 200 61
 [2019-09-12 12:30:59,287] [INFO] "GET / HTTP/1.1" 200 2807
 [2019-09-16 09:29:13,127] [INFO] Watching for file changes with StatReloader
+[2019-09-16 11:48:48,488] [INFO] Watching for file changes with StatReloader
+[2019-09-16 11:51:20,136] [INFO] Watching for file changes with StatReloader
+[2019-09-16 11:51:26,450] [INFO] "GET / HTTP/1.1" 200 2795
+[2019-09-16 11:51:26,470] [WARNING] Not Found: /favicon.ico
+[2019-09-16 11:51:26,471] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2299
+[2019-09-16 11:51:38,435] [ERROR] Internal Server Error: /post/test6/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 22, in showpost
+    logger = logging.getLogger('django')
+NameError: name 'logging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 28, in showpost
+    logger = logging.getLogger('django')
+NameError: name 'logging' is not defined
+[2019-09-16 11:51:38,534] [ERROR] "POST /post/test6/ HTTP/1.1" 500 68002
+[2019-09-16 11:51:38,811] [WARNING] Not Found: /favicon.ico
+[2019-09-16 11:51:38,814] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2299
+[2019-09-16 11:51:54,262] [ERROR] Internal Server Error: /post/test1/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 22, in showpost
+    logger = logging.getLogger('django')
+NameError: name 'logging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 28, in showpost
+    logger = logging.getLogger('django')
+NameError: name 'logging' is not defined
+[2019-09-16 11:51:54,330] [ERROR] "POST /post/test1/ HTTP/1.1" 500 68002
+[2019-09-16 11:53:56,828] [INFO] Watching for file changes with StatReloader
+[2019-09-16 11:54:04,759] [INFO] "GET / HTTP/1.1" 200 2795
+[2019-09-16 11:54:14,697] [INFO] "GET /post HTTP/1.1" 301 0
+[2019-09-16 11:54:14,706] [INFO] "GET /post/ HTTP/1.1" 200 61
+[2019-09-16 11:54:26,807] [ERROR] Internal Server Error: /post/test6/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 22, in showpost
+    logger = logging.getLogger('django')
+NameError: name 'logging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 28, in showpost
+    logger = logging.getLogger('django')
+NameError: name 'logging' is not defined
+[2019-09-16 11:54:26,877] [ERROR] "POST /post/test6/ HTTP/1.1" 500 68002
+[2019-09-16 11:55:05,781] [INFO] Watching for file changes with StatReloader
+[2019-09-16 11:55:11,000] [ERROR] Internal Server Error: /post/test6/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 22, in showpost
+    print("POST = " + post)
+TypeError: Can't convert 'Post' object to str implicitly
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in showpost
+    return redirect('/')
+NameError: name 'redirect' is not defined
+[2019-09-16 11:55:11,065] [ERROR] "POST /post/test6/ HTTP/1.1" 500 67696
+[2019-09-16 11:55:18,650] [INFO] "GET / HTTP/1.1" 200 2795
+[2019-09-16 11:55:19,925] [ERROR] Internal Server Error: /post/test6/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 22, in showpost
+    print("POST = " + post)
+TypeError: Can't convert 'Post' object to str implicitly
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in showpost
+    return redirect('/')
+NameError: name 'redirect' is not defined
+[2019-09-16 11:55:20,018] [ERROR] "POST /post/test6/ HTTP/1.1" 500 67561
+[2019-09-16 11:56:25,515] [INFO] Watching for file changes with StatReloader
+[2019-09-16 11:56:29,077] [INFO] "POST /post/test6/ HTTP/1.1" 200 267
+[2019-09-16 11:57:20,959] [INFO] "GET / HTTP/1.1" 200 2795
+[2019-09-16 11:57:22,884] [INFO] "POST /post/test1/ HTTP/1.1" 200 259
+[2019-09-16 11:57:24,669] [INFO] "GET / HTTP/1.1" 200 2795
+[2019-09-16 11:57:27,126] [INFO] "POST /post/test5/ HTTP/1.1" 200 267
+[2019-09-16 11:57:28,565] [INFO] "GET / HTTP/1.1" 200 2795
