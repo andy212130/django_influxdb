@@ -1,7 +1,14 @@
 #view.py
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import Post
+#from django.contrib import messages
+#from django.conf import settings
+import random,os
+#from app import forms
+#from PLL import Image,ImageDraw,ImageFont
+#from django.contrib.auth.decorators import login_required
+from app import models
+from .models import Post,upload_file
 from datetime import datetime
 
 # Create your views here.
@@ -23,8 +30,31 @@ def showpost(request, slug):
         if post != None:
             return render(request,'post.html',locals())
     except Exception as e:
+        print(e)
         return redirect('/')
 
 def posttest(request):
     post = Post.objects.all()
     return render(request,'test.html',locals())
+
+def upload(request):
+	try:
+		files = request.POST['file']
+		print(files)
+	except:
+		files = request.POST['title']
+	return render(request,'upload.html',locals())
+
+def new(request):
+	try:
+		title = request.POST['title']
+		body = request.POST['body']
+	except:
+		title = None
+		message = "please enter block"
+	
+	post = models.Post.objects.create(title=title,slug=title,body=body)
+	return render(request,'index.html',locals())
+
+def create(request):
+	return render(request,'new_post.html',locals())

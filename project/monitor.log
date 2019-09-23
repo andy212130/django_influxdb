@@ -460,3 +460,1283 @@ NameError: name 'redirect' is not defined
 [2019-09-16 11:57:24,669] [INFO] "GET / HTTP/1.1" 200 2795
 [2019-09-16 11:57:27,126] [INFO] "POST /post/test5/ HTTP/1.1" 200 267
 [2019-09-16 11:57:28,565] [INFO] "GET / HTTP/1.1" 200 2795
+[2019-09-17 03:19:26,765] [INFO] Watching for file changes with StatReloader
+[2019-09-17 03:19:32,590] [INFO] "GET / HTTP/1.1" 200 347
+[2019-09-17 03:19:33,516] [INFO] "GET / HTTP/1.1" 200 347
+[2019-09-17 03:19:34,229] [INFO] "GET / HTTP/1.1" 200 347
+[2019-09-17 03:19:34,461] [INFO] "GET / HTTP/1.1" 200 347
+[2019-09-17 03:19:53,252] [INFO] "GET / HTTP/1.1" 200 347
+[2019-09-17 03:22:55,932] [INFO] Watching for file changes with StatReloader
+[2019-09-17 03:22:58,508] [INFO] "GET / HTTP/1.1" 200 1074
+[2019-09-17 03:23:44,534] [INFO] Watching for file changes with StatReloader
+[2019-09-17 03:24:30,248] [INFO] Watching for file changes with StatReloader
+[2019-09-17 03:24:35,041] [INFO] "GET / HTTP/1.1" 200 1074
+[2019-09-17 03:24:36,291] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 03:24:36,291] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 03:28:30,667] [INFO] Watching for file changes with StatReloader
+[2019-09-17 03:28:37,394] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 03:28:38,917] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 03:28:38,982] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 03:29:02,848] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 03:29:02,921] [ERROR] "POST /post/test6 HTTP/1.1" 500 61879
+[2019-09-17 06:23:19,332] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:23:19,386] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:26:36,407] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:26:41,037] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:26:47,218] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:26:47,272] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:28:40,517] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:28:51,188] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:28:51,252] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:36:02,971] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:36:06,908] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:36:06,963] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:37:29,096] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:37:32,615] [INFO] "GET /post/ HTTP/1.1" 200 61
+[2019-09-17 06:37:35,409] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:37:43,607] [INFO] "GET /post/test1 HTTP/1.1" 301 0
+[2019-09-17 06:37:43,618] [INFO] "GET /post/test1/ HTTP/1.1" 200 73
+[2019-09-17 06:37:52,174] [INFO] "GET /post/test1/ HTTP/1.1" 200 73
+[2019-09-17 06:37:55,099] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:37:57,299] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:37:57,357] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:38:01,612] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:38:01,676] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:39:00,374] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:39:05,998] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:39:06,070] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:39:09,514] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 06:39:09,578] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 06:39:12,964] [INFO] "GET /post/test6/ HTTP/1.1" 200 81
+[2019-09-17 06:39:21,783] [INFO] "GET /post/test1/ HTTP/1.1" 200 73
+[2019-09-17 06:41:02,453] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:41:05,194] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:41:06,490] [INFO] "POST /post/test6 HTTP/1.1" 200 81
+[2019-09-17 06:41:07,792] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:41:08,488] [INFO] "POST /post/test6 HTTP/1.1" 200 81
+[2019-09-17 06:41:11,100] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:41:12,691] [INFO] "POST /post/test6 HTTP/1.1" 200 81
+[2019-09-17 06:41:16,020] [INFO] "POST /post/test6 HTTP/1.1" 200 81
+[2019-09-17 06:48:09,407] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:48:13,816] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:48:16,210] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'extend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 24, in showpost
+    return render(request,'post.html',locals())
+  File "/usr/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'extend'. Did you forget to register or load this tag?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in showpost
+    return redirect('/')
+NameError: name 'redirect' is not defined
+[2019-09-17 06:48:16,284] [ERROR] "POST /post/test6 HTTP/1.1" 500 122230
+[2019-09-17 06:48:19,651] [WARNING] Not Found: /post/test6/
+[2019-09-17 06:48:19,652] [WARNING] "GET /post/test6/ HTTP/1.1" 404 2298
+[2019-09-17 06:48:23,032] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'extend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 24, in showpost
+    return render(request,'post.html',locals())
+  File "/usr/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'extend'. Did you forget to register or load this tag?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in showpost
+    return redirect('/')
+NameError: name 'redirect' is not defined
+[2019-09-17 06:48:23,122] [ERROR] "GET /post/test6 HTTP/1.1" 500 121691
+[2019-09-17 06:50:09,969] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:50:16,748] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:16,790] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:17,812] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:17,828] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:18,726] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:18,741] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:18,981] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:18,996] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:19,214] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:19,231] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:19,641] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:19,651] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:19,844] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:19,866] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:20,033] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:20,098] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:20,249] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:20,266] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:20,415] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:20,442] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:20,614] [INFO] "POST /post/test6 HTTP/1.1" 302 0
+[2019-09-17 06:50:20,626] [INFO] "GET / HTTP/1.1" 200 2370
+[2019-09-17 06:50:30,369] [INFO] "GET /post/ HTTP/1.1" 200 61
+[2019-09-17 06:50:35,963] [WARNING] Not Found: /post/test1/
+[2019-09-17 06:50:35,964] [WARNING] "GET /post/test1/ HTTP/1.1" 404 2298
+[2019-09-17 06:50:39,441] [WARNING] Not Found: /post/test1/
+[2019-09-17 06:50:39,442] [WARNING] "GET /post/test1/ HTTP/1.1" 404 2298
+[2019-09-17 06:50:41,962] [WARNING] Not Found: /post/test1/
+[2019-09-17 06:50:41,963] [WARNING] "GET /post/test1/ HTTP/1.1" 404 2298
+[2019-09-17 06:51:51,097] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:51:57,223] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:51:59,032] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:51:59,046] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:51:59,787] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:51:59,799] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:51:59,958] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:51:59,967] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:52:00,353] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:52:00,364] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:52:01,389] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:52:01,398] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:52:02,577] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:52:02,596] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:52:02,800] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:52:02,813] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:53:44,639] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:54:13,010] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:54:55,156] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:55:03,928] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:55:23,266] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:55:26,930] [INFO] "POST /post/test6/ HTTP/1.1" 302 0
+[2019-09-17 06:55:26,970] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:56:32,028] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:56:34,594] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:56:36,163] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:56:37,298] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:56:39,689] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:56:40,828] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:56:41,992] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:56:43,127] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:56:44,552] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:56:55,748] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:56:57,679] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:02,134] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:57:04,279] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:06,356] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:57:08,848] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:10,327] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:57:12,681] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:13,088] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:57:13,674] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:14,750] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:57:16,658] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:18,536] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:57:21,263] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:57:23,275] [INFO] "GET / HTTP/1.1" 200 2376
+[2019-09-17 06:58:49,966] [INFO] Watching for file changes with StatReloader
+[2019-09-17 06:58:53,592] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:58:57,218] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 06:58:58,232] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:58:59,992] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 06:59:01,284] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:59:02,741] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 06:59:04,158] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 06:59:05,531] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 07:01:23,732] [INFO] Watching for file changes with StatReloader
+[2019-09-17 07:01:27,088] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 07:01:28,584] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 07:01:29,912] [WARNING] Not Found: /='/post/test4/'
+[2019-09-17 07:01:29,913] [WARNING] "GET /='/post/test4/' HTTP/1.1" 404 2337
+[2019-09-17 07:01:32,689] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 07:01:32,689] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 07:01:39,700] [WARNING] Not Found: /='/post/test3/'
+[2019-09-17 07:01:39,701] [WARNING] "GET /='/post/test3/' HTTP/1.1" 404 2337
+[2019-09-17 07:01:43,103] [WARNING] Not Found: /='/post/test5/'
+[2019-09-17 07:01:43,104] [WARNING] "GET /='/post/test5/' HTTP/1.1" 404 2337
+[2019-09-17 07:02:19,936] [INFO] Watching for file changes with StatReloader
+[2019-09-17 07:02:22,846] [WARNING] Not Found: /='/post/test1/'
+[2019-09-17 07:02:22,846] [WARNING] "GET /='/post/test1/' HTTP/1.1" 404 2337
+[2019-09-17 07:02:25,034] [WARNING] Not Found: /='/post/test1/'
+[2019-09-17 07:02:25,035] [WARNING] "GET /='/post/test1/' HTTP/1.1" 404 2337
+[2019-09-17 07:02:25,663] [WARNING] Not Found: /='/post/test1/'
+[2019-09-17 07:02:25,663] [WARNING] "GET /='/post/test1/' HTTP/1.1" 404 2337
+[2019-09-17 07:02:25,879] [WARNING] Not Found: /='/post/test1/'
+[2019-09-17 07:02:25,880] [WARNING] "GET /='/post/test1/' HTTP/1.1" 404 2337
+[2019-09-17 07:02:26,083] [WARNING] Not Found: /='/post/test1/'
+[2019-09-17 07:02:26,083] [WARNING] "GET /='/post/test1/' HTTP/1.1" 404 2337
+[2019-09-17 07:02:29,967] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 07:02:31,941] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 07:02:33,161] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 07:02:34,455] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 07:02:36,032] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 10:34:50,002] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 10:36:50,652] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:36:53,224] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 10:36:55,383] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 10:36:57,643] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 10:36:59,135] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 10:37:00,989] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 10:37:01,752] [INFO] "POST /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 10:37:03,906] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 10:37:30,848] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:37:34,434] [INFO] "GET / HTTP/1.1" 200 2382
+[2019-09-17 10:37:36,484] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:37:36,485] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:37:41,887] [WARNING] Not Found: /='/post/test2/'
+[2019-09-17 10:37:41,888] [WARNING] "GET /='/post/test2/' HTTP/1.1" 404 2337
+[2019-09-17 10:37:58,260] [WARNING] Not Found: /='/post/test4/'
+[2019-09-17 10:37:58,261] [WARNING] "GET /='/post/test4/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:02,637] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:38:36,183] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:38:41,089] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:41,089] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:49,615] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:49,616] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:49,792] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:49,793] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:49,964] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:49,965] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:50,146] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:50,146] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:50,315] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:50,316] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:38:54,654] [WARNING] Not Found: /='/post/test6/'
+[2019-09-17 10:38:54,655] [WARNING] "GET /='/post/test6/' HTTP/1.1" 404 2337
+[2019-09-17 10:39:14,422] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:39:18,511] [INFO] "GET / HTTP/1.1" 200 2352
+[2019-09-17 10:39:19,169] [INFO] "GET / HTTP/1.1" 200 2352
+[2019-09-17 10:39:19,358] [INFO] "GET / HTTP/1.1" 200 2352
+[2019-09-17 10:39:19,548] [INFO] "GET / HTTP/1.1" 200 2352
+[2019-09-17 10:39:20,559] [INFO] "GET /post/test6 HTTP/1.1" 301 0
+[2019-09-17 10:39:20,574] [INFO] "GET /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 10:39:29,368] [INFO] "GET /post/test2 HTTP/1.1" 301 0
+[2019-09-17 10:39:29,389] [INFO] "GET /post/test2/ HTTP/1.1" 200 391
+[2019-09-17 10:39:34,130] [INFO] "GET / HTTP/1.1" 200 2352
+[2019-09-17 10:39:34,805] [INFO] "GET /post/test4 HTTP/1.1" 301 0
+[2019-09-17 10:39:34,819] [INFO] "GET /post/test4/ HTTP/1.1" 200 394
+[2019-09-17 10:40:13,077] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:40:21,326] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:22,953] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:23,174] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:23,346] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:23,516] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:23,702] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:23,885] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:24,049] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:24,237] [INFO] "GET / HTTP/1.1" 200 2310
+[2019-09-17 10:40:29,579] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:40:59,791] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:41:02,237] [INFO] "GET / HTTP/1.1" 200 2328
+[2019-09-17 10:41:03,577] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 10:41:03,639] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 10:41:34,001] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:41:38,287] [INFO] "GET / HTTP/1.1" 200 2340
+[2019-09-17 10:41:39,720] [ERROR] Internal Server Error: /post/test6
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/post/test6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-17 10:41:39,799] [ERROR] "POST /post/test6 HTTP/1.1" 500 61744
+[2019-09-17 10:41:47,003] [INFO] "GET /post/test6/ HTTP/1.1" 200 398
+[2019-09-17 10:43:44,914] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:43:49,746] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:43:52,726] [INFO] "GET / HTTP/1.1" 200 2340
+[2019-09-17 10:43:54,462] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:43:56,627] [INFO] "GET / HTTP/1.1" 200 2340
+[2019-09-17 10:43:57,860] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:43:58,948] [INFO] "GET / HTTP/1.1" 200 2340
+[2019-09-17 10:43:59,246] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:44:00,683] [INFO] "GET / HTTP/1.1" 200 2340
+[2019-09-17 10:44:02,197] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:44:03,675] [INFO] "GET / HTTP/1.1" 200 2340
+[2019-09-17 10:46:19,319] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:46:22,553] [INFO] "GET / HTTP/1.1" 200 2412
+[2019-09-17 10:46:45,548] [INFO] Watching for file changes with StatReloader
+[2019-09-17 10:46:47,750] [INFO] "GET / HTTP/1.1" 200 2406
+[2019-09-17 10:46:48,742] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:46:49,927] [INFO] "GET / HTTP/1.1" 200 2406
+[2019-09-17 10:46:50,807] [INFO] "POST /post/test2 HTTP/1.1" 200 391
+[2019-09-17 10:46:56,344] [INFO] "GET / HTTP/1.1" 200 2406
+[2019-09-17 10:46:57,400] [INFO] "POST /post/test1 HTTP/1.1" 200 390
+[2019-09-17 10:47:35,567] [INFO] "GET / HTTP/1.1" 200 2406
+[2019-09-17 10:47:36,648] [INFO] "POST /post/test1 HTTP/1.1" 200 390
+[2019-09-17 10:53:11,339] [INFO] "GET / HTTP/1.1" 200 2406
+[2019-09-17 10:53:14,256] [INFO] "POST /post/test6 HTTP/1.1" 200 398
+[2019-09-17 10:53:15,804] [INFO] "GET / HTTP/1.1" 200 2406
+[2019-09-17 11:03:19,314] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:03:23,164] [INFO] "GET / HTTP/1.1" 200 2544
+[2019-09-17 11:08:17,784] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:08:20,416] [INFO] "GET /admin HTTP/1.1" 301 0
+[2019-09-17 11:08:20,432] [INFO] "GET /admin/ HTTP/1.1" 302 0
+[2019-09-17 11:08:20,532] [INFO] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1828
+[2019-09-17 11:08:20,585] [INFO] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[2019-09-17 11:08:20,586] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[2019-09-17 11:08:20,586] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[2019-09-17 11:08:20,646] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2019-09-17 11:08:20,707] [INFO] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2019-09-17 11:08:20,707] [INFO] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2019-09-17 11:08:42,647] [INFO] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1969
+[2019-09-17 11:08:42,747] [INFO] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2019-09-17 11:08:55,584] [INFO] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1969
+[2019-09-17 11:09:12,741] [INFO] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2019-09-17 11:09:12,808] [INFO] "GET /admin/ HTTP/1.1" 200 3649
+[2019-09-17 11:09:12,879] [INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[2019-09-17 11:09:12,930] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2019-09-17 11:09:12,931] [INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2019-09-17 11:09:16,027] [INFO] "GET /admin/auth/user/ HTTP/1.1" 200 7084
+[2019-09-17 11:09:16,058] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[2019-09-17 11:09:16,083] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[2019-09-17 11:09:16,093] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[2019-09-17 11:09:16,094] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[2019-09-17 11:09:16,097] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[2019-09-17 11:09:16,116] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:09:16,116] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[2019-09-17 11:09:16,118] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[2019-09-17 11:09:16,128] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[2019-09-17 11:09:16,134] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[2019-09-17 11:09:16,175] [INFO] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[2019-09-17 11:09:16,177] [INFO] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2019-09-17 11:09:16,282] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2019-09-17 11:09:16,284] [INFO] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2019-09-17 11:09:20,987] [INFO] "GET /admin/ HTTP/1.1" 200 3649
+[2019-09-17 11:09:23,814] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5366
+[2019-09-17 11:09:23,881] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:09:27,104] [INFO] "GET /admin/ HTTP/1.1" 200 3649
+[2019-09-17 11:15:58,854] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:16:02,392] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:16:02,461] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2019-09-17 11:16:02,467] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2019-09-17 11:16:02,468] [INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2019-09-17 11:16:02,480] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2019-09-17 11:16:02,543] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2019-09-17 11:16:02,544] [INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2019-09-17 11:16:05,143] [INFO] "GET /admin/app/upload_file/add/ HTTP/1.1" 200 6085
+[2019-09-17 11:16:05,241] [INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[2019-09-17 11:16:05,241] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[2019-09-17 11:16:05,243] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2019-09-17 11:16:05,245] [INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20218
+[2019-09-17 11:16:05,255] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2019-09-17 11:16:05,255] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:16:05,267] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2019-09-17 11:16:05,400] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[2019-09-17 11:16:05,400] [INFO] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[2019-09-17 11:16:08,269] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:16:12,678] [INFO] "GET /admin/app/upload_file/add/ HTTP/1.1" 200 6085
+[2019-09-17 11:16:12,754] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:16:33,031] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:24:17,075] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:37:50,695] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:38:10,943] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:38:16,650] [WARNING] Forbidden (CSRF token missing or incorrect.): /admin/login/
+[2019-09-17 11:38:16,650] [WARNING] "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2506
+[2019-09-17 11:38:20,700] [WARNING] Forbidden (CSRF token missing or incorrect.): /admin/login/
+[2019-09-17 11:38:20,701] [WARNING] "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2506
+[2019-09-17 11:38:29,182] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:38:33,216] [INFO] "GET /admin/app/upload_file/add/ HTTP/1.1" 200 6085
+[2019-09-17 11:38:33,281] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:40:45,956] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:40:52,446] [INFO] "GET / HTTP/1.1" 200 3186
+[2019-09-17 11:41:18,444] [WARNING] Forbidden (CSRF token missing or incorrect.): /upload/
+[2019-09-17 11:41:18,444] [WARNING] "POST /upload/ HTTP/1.1" 403 2506
+[2019-09-17 11:43:04,736] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:43:07,941] [INFO] "GET / HTTP/1.1" 200 2673
+[2019-09-17 11:43:18,670] [ERROR] Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 34, in upload
+    return render(request,'upload.html',locals())
+  File "/usr/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' name' from 'upload_file.File name'
+[2019-09-17 11:43:18,752] [ERROR] "POST /upload/ HTTP/1.1" 500 153001
+[2019-09-17 11:43:53,378] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:43:55,660] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5366
+[2019-09-17 11:43:55,713] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:43:59,215] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:44:01,358] [INFO] "GET /admin/app/post/add/ HTTP/1.1" 200 5948
+[2019-09-17 11:44:01,394] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:44:10,104] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:44:12,800] [INFO] "GET /admin/app/upload_file/ HTTP/1.1" 200 3197
+[2019-09-17 11:44:12,838] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:44:15,932] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-17 11:44:17,893] [INFO] "GET /admin/app/upload_file/add/ HTTP/1.1" 200 6085
+[2019-09-17 11:44:17,942] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-17 11:45:10,048] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:45:18,919] [INFO] "POST /upload/ HTTP/1.1" 200 472
+[2019-09-17 11:46:11,210] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:46:17,850] [INFO] "GET / HTTP/1.1" 200 2673
+[2019-09-17 11:46:25,030] [INFO] "POST /upload/ HTTP/1.1" 200 472
+[2019-09-17 11:47:57,802] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:48:03,234] [INFO] "GET / HTTP/1.1" 200 2673
+[2019-09-17 11:48:05,912] [INFO] "POST /upload/ HTTP/1.1" 200 481
+[2019-09-17 11:49:31,717] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:49:38,717] [INFO] "GET / HTTP/1.1" 200 2673
+[2019-09-17 11:49:40,179] [INFO] "POST /upload/ HTTP/1.1" 200 560
+[2019-09-17 11:50:07,207] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:50:13,734] [INFO] "POST /upload/ HTTP/1.1" 200 509
+[2019-09-17 11:51:33,136] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:51:37,649] [INFO] "POST /upload/ HTTP/1.1" 200 514
+[2019-09-17 11:52:23,366] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:52:27,986] [INFO] "POST /upload/ HTTP/1.1" 200 518
+[2019-09-17 11:52:29,694] [INFO] "GET / HTTP/1.1" 200 2673
+[2019-09-17 11:58:01,443] [INFO] Watching for file changes with StatReloader
+[2019-09-17 11:58:06,504] [INFO] "GET / HTTP/1.1" 200 2668
+[2019-09-17 11:58:06,527] [WARNING] Not Found: /favicon.ico
+[2019-09-17 11:58:06,527] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2405
+[2019-09-17 11:58:09,092] [INFO] "GET / HTTP/1.1" 200 2668
+[2019-09-17 11:58:09,287] [INFO] "GET / HTTP/1.1" 200 2668
+[2019-09-19 02:50:49,453] [INFO] Watching for file changes with StatReloader
+[2019-09-19 02:51:06,454] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 02:51:08,486] [WARNING] Not Found: /favicon.ico
+[2019-09-19 02:51:08,487] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2405
+[2019-09-19 02:51:11,417] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 02:51:15,912] [INFO] "POST /post/test6 HTTP/1.1" 200 1255
+[2019-09-19 02:51:17,713] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 02:56:24,027] [INFO] Watching for file changes with StatReloader
+[2019-09-19 02:56:27,076] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 02:56:28,791] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 02:56:29,877] [INFO] "POST /post/test6 HTTP/1.1" 200 1255
+[2019-09-19 02:56:31,032] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 02:57:58,285] [INFO] "POST /post/test6 HTTP/1.1" 200 1255
+[2019-09-19 02:58:01,104] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 03:11:29,996] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:11:34,009] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 03:11:39,729] [INFO] "POST /upload/ HTTP/1.1" 200 1375
+[2019-09-19 03:11:54,671] [INFO] "GET / HTTP/1.1" 200 3525
+[2019-09-19 03:22:18,938] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:30:34,429] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:30:38,933] [INFO] "GET / HTTP/1.1" 200 3538
+[2019-09-19 03:31:34,354] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:31:39,722] [INFO] "GET / HTTP/1.1" 200 3540
+[2019-09-19 03:33:14,318] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:33:17,826] [INFO] "GET / HTTP/1.1" 200 4441
+[2019-09-19 03:34:17,481] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:34:21,066] [INFO] "GET / HTTP/1.1" 200 4474
+[2019-09-19 03:37:19,069] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:37:24,341] [INFO] "GET / HTTP/1.1" 200 4546
+[2019-09-19 03:39:30,907] [INFO] Watching for file changes with StatReloader
+[2019-09-19 03:39:34,994] [INFO] "GET / HTTP/1.1" 200 4539
+[2019-09-19 03:39:40,833] [INFO] "POST /post/test6 HTTP/1.1" 200 2267
+[2019-09-20 05:51:01,484] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:51:33,360] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:52:17,869] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:52:50,957] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:53:10,185] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:53:40,457] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:54:51,320] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:56:23,594] [INFO] Watching for file changes with StatReloader
+[2019-09-20 05:56:42,741] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:01:39,445] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:03:09,591] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:05:46,124] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:06:51,013] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:07:44,329] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:08:40,688] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:12:12,782] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:12:37,591] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:12:52,241] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:12:55,598] [INFO] "GET /create HTTP/1.1" 301 0
+[2019-09-20 06:12:55,615] [INFO] "GET /create/ HTTP/1.1" 200 2194
+[2019-09-20 06:12:56,231] [WARNING] Not Found: /favicon.ico
+[2019-09-20 06:12:56,231] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2512
+[2019-09-20 06:13:02,040] [INFO] "GET / HTTP/1.1" 200 4652
+[2019-09-20 06:13:35,135] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:13:38,269] [INFO] "GET / HTTP/1.1" 200 4645
+[2019-09-20 06:13:42,895] [INFO] "GET / HTTP/1.1" 200 4645
+[2019-09-20 06:13:43,098] [INFO] "GET / HTTP/1.1" 200 4645
+[2019-09-20 06:14:35,742] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:14:38,757] [INFO] "GET / HTTP/1.1" 200 4647
+[2019-09-20 06:15:25,545] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:15:28,137] [INFO] "GET / HTTP/1.1" 200 4645
+[2019-09-20 06:16:00,316] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:16:03,548] [INFO] "GET / HTTP/1.1" 200 4645
+[2019-09-20 06:17:34,089] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:17:36,766] [INFO] "GET / HTTP/1.1" 200 4649
+[2019-09-20 06:17:43,088] [INFO] "GET / HTTP/1.1" 200 4649
+[2019-09-20 06:17:48,958] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:20:38,329] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:20:41,070] [INFO] "GET / HTTP/1.1" 200 4674
+[2019-09-20 06:22:04,197] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:22:08,136] [INFO] "GET / HTTP/1.1" 200 4672
+[2019-09-20 06:22:28,935] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:23:05,321] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:23:08,450] [INFO] "GET / HTTP/1.1" 200 4691
+[2019-09-20 06:23:22,614] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:23:25,319] [INFO] "GET / HTTP/1.1" 200 4690
+[2019-09-20 06:52:39,965] [INFO] Watching for file changes with StatReloader
+[2019-09-20 06:52:44,987] [INFO] "GET / HTTP/1.1" 200 4710
+[2019-09-20 07:02:09,730] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:02:24,015] [INFO] "GET / HTTP/1.1" 200 4731
+[2019-09-20 07:06:13,024] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:06:20,828] [INFO] "GET / HTTP/1.1" 200 4727
+[2019-09-20 07:16:55,567] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:16:59,755] [INFO] "GET / HTTP/1.1" 200 4622
+[2019-09-20 07:17:03,000] [INFO] "GET /create/ HTTP/1.1" 200 2195
+[2019-09-20 07:17:09,626] [INFO] "GET /create/ HTTP/1.1" 200 2195
+[2019-09-20 07:30:43,120] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:30:59,949] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-20 07:31:00,020] [INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[2019-09-20 07:31:00,022] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[2019-09-20 07:31:00,025] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[2019-09-20 07:31:00,038] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2019-09-20 07:31:00,041] [WARNING] Not Found: /favicon.ico
+[2019-09-20 07:31:00,041] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2512
+[2019-09-20 07:31:00,131] [INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2019-09-20 07:31:00,133] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2019-09-20 07:31:00,143] [INFO] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2019-09-20 07:31:00,166] [INFO] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2019-09-20 07:31:00,275] [INFO] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2019-09-20 07:31:05,992] [INFO] "GET /admin/app/post/add/ HTTP/1.1" 200 5948
+[2019-09-20 07:31:06,081] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,081] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:31:06,084] [INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,086] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[2019-09-20 07:31:06,092] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2019-09-20 07:31:06,097] [INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,111] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,132] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,145] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,153] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2019-09-20 07:31:06,169] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[2019-09-20 07:31:06,170] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2019-09-20 07:31:06,170] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,172] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,180] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-20 07:31:06,475] [INFO] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[2019-09-20 07:31:06,487] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[2019-09-20 07:31:11,494] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-20 07:31:11,600] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 8192
+[2019-09-20 07:31:11,607] [INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[2019-09-20 07:31:11,608] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 8192
+[2019-09-20 07:31:11,612] [WARNING] Not Found: /favicon.ico
+[2019-09-20 07:31:11,612] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2512
+[2019-09-20 07:31:11,613] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2019-09-20 07:31:13,432] [INFO] "GET /admin/app/upload_file/add/ HTTP/1.1" 200 6085
+[2019-09-20 07:31:13,516] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8192
+[2019-09-20 07:31:13,534] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:31:13,537] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2019-09-20 07:31:13,539] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2019-09-20 07:31:13,558] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2019-09-20 07:31:13,684] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[2019-09-20 07:31:17,483] [INFO] "GET /admin/ HTTP/1.1" 200 4100
+[2019-09-20 07:32:03,122] [INFO] "GET /admin/app/post/add/ HTTP/1.1" 200 5948
+[2019-09-20 07:32:03,184] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:32:03,216] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2019-09-20 07:32:03,222] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2019-09-20 07:32:03,253] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2019-09-20 07:35:25,220] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:35:30,239] [INFO] "GET /admin/app/post/add/ HTTP/1.1" 200 5948
+[2019-09-20 07:35:30,298] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2019-09-20 07:35:30,299] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2019-09-20 07:35:30,302] [INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,302] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,325] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,328] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,329] [INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,336] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,343] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,345] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,355] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,357] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,364] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2019-09-20 07:35:30,372] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,373] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2019-09-20 07:35:30,415] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:35:30,459] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2019-09-20 07:35:30,474] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2019-09-20 07:35:30,622] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[2019-09-20 07:35:30,622] [INFO] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[2019-09-20 07:35:33,012] [INFO] "POST /admin/app/post/add/ HTTP/1.1" 200 6225
+[2019-09-20 07:35:33,087] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:36:00,371] [INFO] "POST /admin/app/post/add/ HTTP/1.1" 302 0
+[2019-09-20 07:36:00,494] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5742
+[2019-09-20 07:36:00,571] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:36:00,576] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2019-09-20 07:36:00,719] [INFO] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2019-09-20 07:36:00,724] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2019-09-20 07:36:28,588] [INFO] "GET /admin/ HTTP/1.1" 200 4411
+[2019-09-20 07:36:28,657] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2019-09-20 07:36:28,662] [INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2019-09-20 07:36:31,143] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5579
+[2019-09-20 07:36:31,208] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:36:35,646] [INFO] "GET /admin/app/ HTTP/1.1" 200 2834
+[2019-09-20 07:36:35,742] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2019-09-20 07:36:37,878] [INFO] "GET /admin/ HTTP/1.1" 200 4411
+[2019-09-20 07:36:41,608] [INFO] "GET /admin/app/ HTTP/1.1" 200 2834
+[2019-09-20 07:36:44,356] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5579
+[2019-09-20 07:36:44,402] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-20 07:47:35,683] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:47:40,560] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-20 07:47:42,640] [INFO] "GET /create/ HTTP/1.1" 200 2465
+[2019-09-20 07:48:00,892] [INFO] "POST /create/ HTTP/1.1" 200 2465
+[2019-09-20 07:48:02,954] [INFO] "POST /create/ HTTP/1.1" 200 2465
+[2019-09-20 07:48:04,141] [INFO] "POST /create/ HTTP/1.1" 200 2465
+[2019-09-20 07:48:04,779] [INFO] "POST /create/ HTTP/1.1" 200 2465
+[2019-09-20 07:48:05,574] [INFO] "POST /create/ HTTP/1.1" 200 2465
+[2019-09-20 07:49:15,203] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:49:21,513] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:36,874] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-20 07:49:39,719] [INFO] "GET /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:42,319] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:43,136] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:43,358] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:43,569] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:43,838] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:49:44,118] [INFO] "POST /create/ HTTP/1.1" 200 2476
+[2019-09-20 07:50:14,469] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:50:18,676] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:20,011] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:20,676] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:20,906] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:21,165] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:21,372] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:21,587] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:21,793] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:22,060] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:50:28,778] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:52:33,861] [INFO] Watching for file changes with StatReloader
+[2019-09-20 07:52:37,776] [INFO] "POST /create/ HTTP/1.1" 200 2477
+[2019-09-20 07:52:40,138] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 07:52:41,698] [INFO] "GET /create/ HTTP/1.1" 200 2477
+[2019-09-20 08:03:01,166] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:03:04,055] [INFO] "GET /create/ HTTP/1.1" 200 2555
+[2019-09-20 08:03:09,533] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:03:10,994] [INFO] "GET /create/ HTTP/1.1" 200 2555
+[2019-09-20 08:06:01,382] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:06:05,282] [INFO] "GET /create/ HTTP/1.1" 200 2576
+[2019-09-20 08:06:13,152] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:06:16,571] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:06:18,344] [INFO] "GET /create/ HTTP/1.1" 200 2576
+[2019-09-20 08:07:28,732] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:07:31,535] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:07:32,500] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:07:33,272] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:07:33,543] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:07:33,784] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:07:56,657] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:07:59,333] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:08:06,383] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:08:08,002] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:09:17,616] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:09:20,773] [INFO] "GET /create/ HTTP/1.1" 200 2610
+[2019-09-20 08:09:21,704] [INFO] "GET /create/ HTTP/1.1" 200 2610
+[2019-09-20 08:09:21,994] [INFO] "GET /create/ HTTP/1.1" 200 2610
+[2019-09-20 08:09:38,948] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:10:15,958] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:10:21,535] [INFO] "GET /create/ HTTP/1.1" 200 2598
+[2019-09-20 08:11:38,576] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:11:41,681] [ERROR] Internal Server Error: /create/
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 44, in new
+    return render(request,'new_post.html',locals())
+  File "/usr/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/defaulttags.py", line 1148, in now
+    raise TemplateSyntaxError("'now' statement takes one argument")
+django.template.exceptions.TemplateSyntaxError: 'now' statement takes one argument
+[2019-09-20 08:11:41,816] [ERROR] "GET /create/ HTTP/1.1" 500 148229
+[2019-09-20 08:11:43,235] [ERROR] Internal Server Error: /create/
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 44, in new
+    return render(request,'new_post.html',locals())
+  File "/usr/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/lib/python3.5/site-packages/django/template/defaulttags.py", line 1148, in now
+    raise TemplateSyntaxError("'now' statement takes one argument")
+django.template.exceptions.TemplateSyntaxError: 'now' statement takes one argument
+[2019-09-20 08:11:43,315] [ERROR] "GET /create/ HTTP/1.1" 500 148229
+[2019-09-20 08:14:09,801] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:14:14,281] [INFO] "GET /create/ HTTP/1.1" 200 2600
+[2019-09-20 08:14:17,687] [INFO] "GET /create/ HTTP/1.1" 200 2600
+[2019-09-20 08:14:18,530] [INFO] "GET /create/ HTTP/1.1" 200 2600
+[2019-09-20 08:14:41,762] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:15:09,163] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:15:11,668] [INFO] "GET /create/ HTTP/1.1" 200 2608
+[2019-09-20 08:15:12,552] [INFO] "GET /create/ HTTP/1.1" 200 2608
+[2019-09-20 08:15:57,460] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:16:00,218] [INFO] "GET /create/ HTTP/1.1" 200 2642
+[2019-09-20 08:22:37,345] [INFO] "GET /create/ HTTP/1.1" 200 2642
+[2019-09-20 08:23:34,755] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:23:37,370] [INFO] "GET /create/ HTTP/1.1" 200 2642
+[2019-09-20 08:27:06,264] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:27:09,387] [INFO] "GET /create/ HTTP/1.1" 200 2659
+[2019-09-20 08:27:30,045] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:27:32,516] [INFO] "GET /create/ HTTP/1.1" 200 2660
+[2019-09-20 08:27:39,498] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-20 08:33:12,457] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:33:14,852] [INFO] "GET /create/ HTTP/1.1" 200 2674
+[2019-09-20 08:34:49,145] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:34:52,813] [INFO] "GET /create/ HTTP/1.1" 200 2656
+[2019-09-20 08:35:47,593] [INFO] Watching for file changes with StatReloader
+[2019-09-20 08:35:50,481] [INFO] "GET /create/ HTTP/1.1" 200 2669
+[2019-09-23 00:37:28,974] [INFO] Watching for file changes with StatReloader
+[2019-09-23 00:37:36,581] [INFO] "GET /create/ HTTP/1.1" 200 2669
+[2019-09-23 00:37:50,029] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-23 00:43:35,652] [INFO] Watching for file changes with StatReloader
+[2019-09-23 00:44:00,653] [INFO] Watching for file changes with StatReloader
+[2019-09-23 00:44:10,080] [INFO] "POST / HTTP/1.1" 200 4955
+[2019-09-23 00:44:12,636] [INFO] "GET /create/ HTTP/1.1" 200 2672
+[2019-09-23 00:44:26,854] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 00:44:41,325] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 00:44:46,003] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-23 00:44:48,776] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-23 00:44:54,994] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5579
+[2019-09-23 00:44:55,060] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[2019-09-23 00:44:55,061] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[2019-09-23 00:44:55,065] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[2019-09-23 00:44:55,065] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 00:44:55,067] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[2019-09-23 00:44:55,074] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2019-09-23 00:44:55,099] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,112] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,122] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,132] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,143] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,150] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,157] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-23 00:44:55,292] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2019-09-23 00:44:56,142] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5579
+[2019-09-23 00:44:56,168] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,169] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2019-09-23 00:44:56,169] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,169] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,170] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2019-09-23 00:44:56,177] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,190] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,194] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,195] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,197] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-23 00:44:56,200] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2019-09-23 00:44:56,242] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 00:44:56,245] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2019-09-23 00:44:56,359] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2019-09-23 00:46:08,566] [INFO] Watching for file changes with StatReloader
+[2019-09-23 00:46:30,578] [INFO] Watching for file changes with StatReloader
+[2019-09-23 00:46:36,811] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-23 00:46:38,915] [INFO] "GET /create/ HTTP/1.1" 200 2672
+[2019-09-23 00:46:44,749] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 00:46:50,895] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 00:46:54,676] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 00:46:57,823] [INFO] "GET / HTTP/1.1" 200 5954
+[2019-09-23 00:47:03,835] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 6223
+[2019-09-23 00:47:03,889] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2019-09-23 00:47:03,893] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2019-09-23 00:47:03,902] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,911] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 00:47:03,911] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,915] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,930] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,931] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,948] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,948] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-23 00:47:03,956] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2019-09-23 00:47:03,958] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-23 00:47:04,020] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2019-09-23 00:47:04,136] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2019-09-23 00:47:18,284] [INFO] "POST /admin/app/post/ HTTP/1.1" 200 3538
+[2019-09-23 00:47:18,328] [INFO] "GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+[2019-09-23 00:47:22,175] [INFO] "POST /admin/app/post/ HTTP/1.1" 200 3538
+[2019-09-23 00:47:22,221] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2019-09-23 00:47:22,223] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,227] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,231] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,233] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,244] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,248] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,250] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,250] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,252] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2019-09-23 00:47:22,252] [INFO] "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+[2019-09-23 00:47:22,354] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2019-09-23 00:47:25,226] [INFO] "POST /admin/app/post/ HTTP/1.1" 302 0
+[2019-09-23 00:47:25,299] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5702
+[2019-09-23 00:47:25,369] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 00:47:25,466] [INFO] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2019-09-23 05:33:10,550] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-23 05:33:22,549] [INFO] "GET /create/ HTTP/1.1" 200 2672
+[2019-09-23 05:33:35,164] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 05:33:42,152] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 05:33:50,144] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:53,655] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:53,668] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:54,977] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:54,998] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:55,212] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:55,229] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:55,454] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:55,484] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:56,568] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:56,637] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:57,625] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:57,640] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:33:57,906] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:33:57,917] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:34:02,637] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 6009
+[2019-09-23 05:34:02,668] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2019-09-23 05:34:02,671] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,672] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,675] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,679] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,695] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,699] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,710] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2019-09-23 05:34:02,711] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2019-09-23 05:34:02,712] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,713] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2019-09-23 05:34:02,752] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 05:34:02,753] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2019-09-23 05:34:02,886] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2019-09-23 05:34:06,107] [INFO] "GET /admin/app/post/12/change/ HTTP/1.1" 200 6182
+[2019-09-23 05:34:06,149] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 05:34:06,170] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2019-09-23 05:34:06,175] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2019-09-23 05:34:06,175] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[2019-09-23 05:34:06,200] [INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2019-09-23 05:34:06,236] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2019-09-23 05:34:06,248] [INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2019-09-23 05:34:06,376] [INFO] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[2019-09-23 05:34:06,376] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[2019-09-23 05:34:10,982] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 6009
+[2019-09-23 05:34:12,859] [INFO] "GET /admin/app/post/11/change/ HTTP/1.1" 200 6182
+[2019-09-23 05:34:12,916] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 05:34:12,920] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8192
+[2019-09-23 05:34:12,934] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2019-09-23 05:34:12,936] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2019-09-23 05:34:12,945] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2019-09-23 05:34:13,076] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[2019-09-23 05:35:12,354] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 6009
+[2019-09-23 05:35:14,940] [INFO] "POST /post/test2 HTTP/1.1" 200 2261
+[2019-09-23 05:35:18,952] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:18,968] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:19,932] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:19,945] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:20,699] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:20,719] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:21,229] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:21,244] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:21,444] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:21,457] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:22,631] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:23,794] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:23,814] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:24,460] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:24,471] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:24,681] [INFO] "POST /post/test8 HTTP/1.1" 302 0
+[2019-09-23 05:35:24,702] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:35:32,494] [INFO] "POST /post/test7 HTTP/1.1" 200 2267
+[2019-09-23 05:35:35,032] [INFO] "GET / HTTP/1.1" 200 5621
+[2019-09-23 05:36:01,286] [INFO] "POST /admin/app/post/ HTTP/1.1" 200 3413
+[2019-09-23 05:36:04,677] [INFO] "POST /admin/app/post/ HTTP/1.1" 302 0
+[2019-09-23 05:36:04,767] [INFO] "GET /admin/app/post/ HTTP/1.1" 200 5702
+[2019-09-23 05:36:04,841] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
+[2019-09-23 05:36:04,924] [INFO] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[2019-09-23 05:36:09,162] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-23 05:36:10,855] [INFO] "POST /post/test1 HTTP/1.1" 200 2260
+[2019-09-23 05:36:12,324] [INFO] "GET / HTTP/1.1" 200 4955
+[2019-09-23 05:36:13,712] [INFO] "GET /create/ HTTP/1.1" 200 2672
+[2019-09-23 05:36:24,885] [INFO] "POST /new HTTP/1.1" 200 2597
+[2019-09-23 05:36:29,270] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 05:36:32,925] [INFO] "POST /post/test8 HTTP/1.1" 200 2264
+[2019-09-23 05:36:36,071] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 05:36:37,488] [INFO] "POST /post/test8 HTTP/1.1" 200 2264
+[2019-09-23 05:36:38,702] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:05:19,841] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:05:25,702] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:05:26,267] [WARNING] Not Found: /favicon.ico
+[2019-09-23 07:05:26,268] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2615
+[2019-09-23 07:05:32,888] [INFO] "POST /upload/ HTTP/1.1" 200 2394
+[2019-09-23 07:05:35,696] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:08:46,618] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:08:49,656] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:08:52,066] [INFO] "GET /create/ HTTP/1.1" 200 2675
+[2019-09-23 07:09:03,410] [ERROR] Internal Server Error: /upload
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/lib/python3.5/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:1999/upload/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2019-09-23 07:09:03,475] [ERROR] "POST /upload HTTP/1.1" 500 62179
+[2019-09-23 07:10:30,680] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:10:39,022] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:10:42,078] [INFO] "GET /create/ HTTP/1.1" 200 2676
+[2019-09-23 07:10:49,849] [INFO] "POST /upload/ HTTP/1.1" 200 2393
+[2019-09-23 07:12:50,311] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:12:53,375] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:12:55,332] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:13:02,155] [INFO] "POST /upload/ HTTP/1.1" 200 2395
+[2019-09-23 07:16:07,148] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:16:10,632] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:16:18,477] [INFO] "POST /upload/ HTTP/1.1" 200 2394
+[2019-09-23 07:19:15,063] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:19:31,743] [INFO] "POST /upload/ HTTP/1.1" 200 2394
+[2019-09-23 07:29:23,677] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:29:32,609] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:29:33,836] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:29:41,323] [INFO] "POST /upload/ HTTP/1.1" 200 2470
+[2019-09-23 07:29:46,025] [INFO] "POST /upload/ HTTP/1.1" 200 2470
+[2019-09-23 07:29:54,188] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:37:21,720] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:37:35,528] [INFO] "POST /upload/ HTTP/1.1" 200 2405
+[2019-09-23 07:39:49,583] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:39:56,566] [ERROR] Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 43, in upload
+    print(files['tmp_name'])
+TypeError: string indices must be integers
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 45, in upload
+    files = request.POST['title']
+  File "/usr/lib/python3.5/site-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'title'
+[2019-09-23 07:39:56,636] [ERROR] "POST /upload/ HTTP/1.1" 500 75925
+[2019-09-23 07:40:14,323] [INFO] "GET / HTTP/1.1" 200 5288
+[2019-09-23 07:40:14,436] [WARNING] Not Found: /favicon.ico
+[2019-09-23 07:40:14,437] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2514
+[2019-09-23 07:40:27,701] [ERROR] Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "/django_influxdb/project/app/views.py", line 43, in upload
+    print(files['tmp_name'])
+TypeError: string indices must be integers
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 45, in upload
+    files = request.POST['title']
+  File "/usr/lib/python3.5/site-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'title'
+[2019-09-23 07:40:27,763] [ERROR] "POST /upload/ HTTP/1.1" 500 76442
+[2019-09-23 07:40:27,877] [WARNING] Not Found: /favicon.ico
+[2019-09-23 07:40:27,878] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2514
+[2019-09-23 07:41:57,124] [INFO] Watching for file changes with StatReloader
+[2019-09-23 07:42:01,454] [INFO] "POST /upload/ HTTP/1.1" 200 2405

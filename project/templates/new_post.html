@@ -1,0 +1,17 @@
+<!-- new_post.html -->
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Create new posts{% endblock %}
+{% block headmessage %}
+	<form action="/upload/" method="post">
+	{% csrf_token %}
+	<label for='title' style='width:100px;'>title:<label>
+	<input type='text' name='title'>
+	<br>
+	<label for='body'>body:<label>
+	<textarea name='body' style='resize:none;width:400px;height:200px;'></textarea> 
+	<br>
+	<input type='submit' value='new'>
+	</form>
+{% endblock %}
+{% block content %}<p style='font-family:serif;'>now time:{{now}}</p> {% endblock %}
