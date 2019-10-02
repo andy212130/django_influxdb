@@ -15,9 +15,9 @@
 			</form>
 		</p>
 	{% endfor %}
-	<form action='upload/' method="post">
+	<form enctype="multipart/form-data" action='upload/' method="post">
 	{% csrf_token %}
-        <input type="file" name="file">
+        <input type="file" name="test1">
         <input type="submit" value="upload">
         </form>
 	<form action='create/' >

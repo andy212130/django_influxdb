@@ -5,11 +5,13 @@ from django.http import HttpResponse
 #from django.conf import settings
 import random,os
 #from app import forms
-#from PLL import Image,ImageDraw,ImageFont
+from PLL import Image,ImageDraw,ImageFont
 #from django.contrib.auth.decorators import login_required
 from app import models
 from .models import Post,upload_file
 from datetime import datetime
+from django.conf import settings
+from random import *
 
 # Create your views here.
 
@@ -39,22 +41,30 @@ def posttest(request):
 
 def upload(request):
 	try:
-		files = request.POST['file']
-		print(files)
-	except:
+		files = request.FILES['test1']
+#		path = os.path.realpath(files)
+		save_path = '%s/%s'%(settings.MEDIA_ROOT,files.name)
+		print(type(files.name))
+#		print(save_path)
+		with open(save_path, 'wb') as f:
+			for chunk in files.chunks():
+#				print(chunk)
+				f.write(chunk)
+		post = models.upload_file.objects.create(user_id=randint(0,25535),file_name=files.name,file_path=save_path)
+	except Exception as e:
+		print(e)
+		print(1)
 		files = request.POST['title']
+		try:
+			title = request.POST['title']
+			body = request.POST['body']
+		except:
+			title = None
+			message = "please enter block"
+		post = models.Post.objects.create(title=title,slug=title,body=body)
+
 	return render(request,'upload.html',locals())
 
-def new(request):
-	try:
-		title = request.POST['title']
-		body = request.POST['body']
-	except:
-		title = None
-		message = "please enter block"
-	
-	post = models.Post.objects.create(title=title,slug=title,body=body)
-	return render(request,'index.html',locals())
 
 def create(request):
 	return render(request,'new_post.html',locals())
