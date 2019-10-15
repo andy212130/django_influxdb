@@ -1,17 +1,18 @@
 #view.py
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 #from django.contrib import messages
 #from django.conf import settings
 import random,os
 #from app import forms
-from PLL import Image,ImageDraw,ImageFont
+#from PLL import Image,ImageDraw,ImageFont
 #from django.contrib.auth.decorators import login_required
 from app import models
 from .models import Post,upload_file
 from datetime import datetime
 from django.conf import settings
 from random import *
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -68,3 +69,7 @@ def upload(request):
 
 def create(request):
 	return render(request,'new_post.html',locals())
+
+@csrf_exempt
+def showth(request):
+	return render(request,'show.html',locals())

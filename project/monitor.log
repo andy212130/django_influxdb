@@ -3188,3 +3188,20 @@ django.utils.datastructures.MultiValueDictKeyError: 'title'
 [2019-10-01 05:48:08,565] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 7719
 [2019-10-01 05:48:08,583] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
 [2019-10-01 05:48:16,494] [INFO] "GET /admin/app/upload_file/ HTTP/1.1" 200 4387
+[2019-10-15 07:10:17,628] [INFO] Watching for file changes with StatReloader
+[2019-10-15 07:11:48,947] [INFO] Watching for file changes with StatReloader
+[2019-10-15 07:11:50,539] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:50,542] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-15 07:11:51,441] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:51,446] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-15 07:11:52,447] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:52,449] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-15 07:11:53,458] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:53,463] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-15 07:11:54,708] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:54,712] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-15 07:11:55,607] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:55,614] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-15 07:11:56,596] [INFO] "GET /show HTTP/1.1" 200 1242
+[2019-10-15 07:11:57,062] [WARNING] Not Found: /save_data
+[2019-10-15 07:11:57,067] [WARNING] "POST /save_data HTTP/1.1" 404 2613
