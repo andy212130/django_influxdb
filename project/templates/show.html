@@ -1,0 +1,46 @@
+<!--show.html-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<title>show</title>
+<head>
+        <h1>show data</h1>
+        <p>
+        <h3><a href='/'>return</a></h3>
+        </p>
+
+</head>
+<body onload="start()" >
+        <div>
+                <h2>temperature:<span id='t'>0.00</span<h2>
+                
+
+        </div>
+        <div>
+                <h2>humidity:<span id='h'>0.00</span>%<h2>
+                
+        </div>
+        
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+        function data(){
+                var data_t = (Math.random()*10.00+30).toFixed(2);
+                var data_h = (Math.random()*48.00+10).toFixed(2);
+                document.getElementById("t").innerHTML=data_t;
+                document.getElementById("h").innerHTML=data_h;
+		var data=JSON.stringify({
+                        tdata:data_t,
+                        hdata:data_h})
+                var csrftoken = Cookies.get('csrftoken');
+                var headers = {X_CSRFTOKEN: csrftoken};
+                axios.post('/save_data',
+			{'params':data},
+			{'headers': headers}
+		);
+        }
+        function start(){
+                startcalc = setInterval(data,5000);             
+        }
+</script>
+</html>
