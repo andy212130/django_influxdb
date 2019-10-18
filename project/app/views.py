@@ -22,6 +22,9 @@ from mqtt_test import mqtt_sub as sub
 def mqtt(request):
     #data = sub.getdata()
     data = sub.start()
+    data = str(data).split('\'')
+    data = float(data[1])
+    data = format(data, '.2f')
     print(data)
 #    sub.stop()
     return render(request,'CO2.html',locals())

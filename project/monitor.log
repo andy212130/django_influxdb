@@ -3352,3 +3352,169 @@ NameError: name 'client' is not defined
 [2019-10-18 03:42:45,270] [INFO] "GET /mqtt HTTP/1.1" 200 1217
 [2019-10-18 03:42:47,113] [INFO] "GET /mqtt HTTP/1.1" 200 1218
 [2019-10-18 03:42:48,997] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-18 07:41:32,138] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:43:34,115] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:43:42,419] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    data = data.split('\'')
+AttributeError: 'float' object has no attribute 'split'
+[2019-10-18 07:43:42,999] [ERROR] "GET /mqtt HTTP/1.1" 500 67741
+[2019-10-18 07:43:44,264] [WARNING] Not Found: /favicon.ico
+[2019-10-18 07:43:44,270] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2722
+[2019-10-18 07:43:45,801] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    data = data.split('\'')
+TypeError: a bytes-like object is required, not 'str'
+[2019-10-18 07:43:46,400] [ERROR] "GET /mqtt HTTP/1.1" 500 67716
+[2019-10-18 07:43:48,132] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    data = data.split('\'')
+TypeError: a bytes-like object is required, not 'str'
+[2019-10-18 07:43:48,541] [ERROR] "GET /mqtt HTTP/1.1" 500 67716
+[2019-10-18 07:44:52,924] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:44:57,158] [INFO] "GET /mqtt HTTP/1.1" 200 1204
+[2019-10-18 07:44:59,266] [INFO] "GET /mqtt HTTP/1.1" 200 1244
+[2019-10-18 07:45:01,951] [INFO] "GET /mqtt HTTP/1.1" 200 1244
+[2019-10-18 07:45:04,455] [INFO] "GET /mqtt HTTP/1.1" 200 1243
+[2019-10-18 07:45:36,654] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:45:40,378] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    data = str(data).split('\'')[1]
+IndexError: list index out of range
+[2019-10-18 07:45:40,807] [ERROR] "GET /mqtt HTTP/1.1" 500 67603
+[2019-10-18 07:45:43,516] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    data = str(data).split('\'')[1]
+IndexError: list index out of range
+[2019-10-18 07:45:43,947] [ERROR] "GET /mqtt HTTP/1.1" 500 67603
+[2019-10-18 07:45:45,572] [INFO] "GET /mqtt HTTP/1.1" 200 1207
+[2019-10-18 07:45:48,137] [INFO] "GET /mqtt HTTP/1.1" 200 1207
+[2019-10-18 07:45:49,826] [INFO] "GET /mqtt HTTP/1.1" 200 1206
+[2019-10-18 07:46:36,001] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:46:39,593] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in mqtt
+    data = float(data[1])
+IndexError: list index out of range
+[2019-10-18 07:46:40,080] [ERROR] "GET /mqtt HTTP/1.1" 500 67590
+[2019-10-18 07:46:42,811] [INFO] "GET /mqtt HTTP/1.1" 200 1207
+[2019-10-18 07:46:44,685] [INFO] "GET /mqtt HTTP/1.1" 200 1206
+[2019-10-18 07:46:46,739] [INFO] "GET /mqtt HTTP/1.1" 200 1206
+[2019-10-18 07:46:48,823] [INFO] "GET /mqtt HTTP/1.1" 200 1207
+[2019-10-18 07:46:50,869] [INFO] "GET /mqtt HTTP/1.1" 200 1207
+[2019-10-18 07:47:40,250] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:47:49,656] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in mqtt
+    data = float(data[1])
+IndexError: list index out of range
+[2019-10-18 07:47:50,418] [ERROR] "GET /mqtt HTTP/1.1" 500 67606
+[2019-10-18 07:47:53,648] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:47:55,817] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:47:57,407] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:47:59,152] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:23,759] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:25,873] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:26,957] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:28,182] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:29,911] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:31,097] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:32,325] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:33,401] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:34,641] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:35,787] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:36,993] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:38,123] [INFO] "GET /mqtt HTTP/1.1" 200 1193
+[2019-10-18 07:48:40,051] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:41,612] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:42,802] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:43,898] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:45,351] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:46,500] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:47,602] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:48:49,877] [INFO] "GET /mqtt HTTP/1.1" 200 1194
+[2019-10-18 07:49:53,640] [INFO] Watching for file changes with StatReloader
+[2019-10-18 07:49:57,679] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 26, in mqtt
+    data = float(data[1])
+IndexError: list index out of range
+[2019-10-18 07:49:58,222] [ERROR] "GET /mqtt HTTP/1.1" 500 67606
+[2019-10-18 07:50:00,578] [INFO] "GET /mqtt HTTP/1.1" 200 1198
+[2019-10-18 07:50:02,217] [INFO] "GET /mqtt HTTP/1.1" 200 1198
+[2019-10-18 07:50:03,556] [INFO] "GET /mqtt HTTP/1.1" 200 1198
+[2019-10-18 07:50:06,014] [INFO] "GET /mqtt HTTP/1.1" 200 1198
+[2019-10-18 07:50:09,185] [INFO] "GET /mqtt HTTP/1.1" 200 1197
+[2019-10-18 07:50:10,559] [INFO] "GET /mqtt HTTP/1.1" 200 1197
+[2019-10-18 07:50:11,983] [INFO] "GET /mqtt HTTP/1.1" 200 1197
+[2019-10-18 07:50:13,118] [INFO] "GET /mqtt HTTP/1.1" 200 1197
+[2019-10-18 07:50:14,411] [INFO] "GET /mqtt HTTP/1.1" 200 1198

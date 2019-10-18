@@ -16,7 +16,8 @@ def on_message(client, userdata, msg):
 #    print('#')
 #    print(data)
     if data==new_data:
-        print('eq')
+        text ='eq'
+#        print(text)
     else:
 #        print('1')
         data=new_data
