@@ -3205,3 +3205,150 @@ django.utils.datastructures.MultiValueDictKeyError: 'title'
 [2019-10-15 07:11:56,596] [INFO] "GET /show HTTP/1.1" 200 1242
 [2019-10-15 07:11:57,062] [WARNING] Not Found: /save_data
 [2019-10-15 07:11:57,067] [WARNING] "POST /save_data HTTP/1.1" 404 2613
+[2019-10-16 08:02:26,774] [INFO] Watching for file changes with StatReloader
+[2019-10-16 08:03:44,295] [INFO] Watching for file changes with StatReloader
+[2019-10-16 08:04:50,041] [INFO] Watching for file changes with StatReloader
+[2019-10-16 08:44:34,428] [INFO] Watching for file changes with StatReloader
+[2019-10-16 08:44:40,978] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 37, in mqtt
+    client = mqtt.Client()
+AttributeError: 'function' object has no attribute 'Client'
+[2019-10-16 08:44:41,476] [ERROR] "GET /mqtt HTTP/1.1" 500 64020
+[2019-10-16 08:48:22,128] [INFO] Watching for file changes with StatReloader
+[2019-10-16 08:48:28,441] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 37, in mqtt
+    client = mqtt.Client()
+AttributeError: 'function' object has no attribute 'Client'
+[2019-10-16 08:48:28,809] [ERROR] "GET /mqtt HTTP/1.1" 500 64155
+[2019-10-16 08:54:52,656] [INFO] Watching for file changes with StatReloader
+[2019-10-16 08:55:02,274] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/django_influxdb/project/app/views.py", line 37, in mqtt
+    client = mqtt.Client()
+AttributeError: 'function' object has no attribute 'Client'
+[2019-10-16 08:55:02,739] [ERROR] "GET /mqtt HTTP/1.1" 500 64155
+[2019-10-16 11:44:30,085] [INFO] Watching for file changes with StatReloader
+[2019-10-16 11:45:37,578] [INFO] Watching for file changes with StatReloader
+[2019-10-16 11:45:52,412] [INFO] Watching for file changes with StatReloader
+[2019-10-16 11:50:38,411] [INFO] Watching for file changes with StatReloader
+[2019-10-16 11:50:45,240] [INFO] "GET /mqtt HTTP/1.1" 200 1178
+[2019-10-16 11:50:57,453] [INFO] "GET /mqtt HTTP/1.1" 200 1178
+[2019-10-16 11:50:59,225] [INFO] "GET /mqtt HTTP/1.1" 200 1178
+[2019-10-16 11:51:53,587] [INFO] Watching for file changes with StatReloader
+[2019-10-16 11:51:58,506] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:51:59,807] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:52:01,115] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:52:03,137] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:52:04,407] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:52:41,866] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:52:42,451] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-16 11:53:28,501] [INFO] /django_influxdb/project/mqtt_test/mqtt_sub.py changed, reloading.
+[2019-10-16 11:53:31,421] [INFO] Watching for file changes with StatReloader
+[2019-10-17 08:55:41,255] [INFO] Watching for file changes with StatReloader
+[2019-10-17 08:57:07,520] [INFO] Watching for file changes with StatReloader
+[2019-10-17 08:59:32,252] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:13:54,261] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:17:33,389] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:21:18,616] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:22:11,865] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:23:40,747] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:25:11,754] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:25:44,042] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:27:20,423] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:27:44,794] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:28:11,790] [INFO] Watching for file changes with StatReloader
+[2019-10-17 09:28:26,197] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-17 09:28:26,957] [WARNING] Not Found: /favicon.ico
+[2019-10-17 09:28:26,962] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2722
+[2019-10-17 09:28:28,194] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-17 11:38:15,076] [INFO] Watching for file changes with StatReloader
+[2019-10-17 11:39:47,419] [INFO] Watching for file changes with StatReloader
+[2019-10-17 11:40:51,398] [INFO] Watching for file changes with StatReloader
+[2019-10-17 11:41:18,991] [INFO] Watching for file changes with StatReloader
+[2019-10-17 12:10:30,835] [INFO] Watching for file changes with StatReloader
+[2019-10-17 12:10:46,792] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    sub.stop()
+  File "/django_influxdb/project/mqtt_test/mqtt_sub.py", line 41, in stop
+    client.loop_stop()
+NameError: name 'client' is not defined
+[2019-10-17 12:10:47,373] [ERROR] "GET /mqtt HTTP/1.1" 500 70304
+[2019-10-17 12:10:49,155] [ERROR] Internal Server Error: /mqtt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/django_influxdb/project/app/views.py", line 25, in mqtt
+    sub.stop()
+  File "/django_influxdb/project/mqtt_test/mqtt_sub.py", line 41, in stop
+    client.loop_stop()
+NameError: name 'client' is not defined
+[2019-10-17 12:10:49,669] [ERROR] "GET /mqtt HTTP/1.1" 500 70329
+[2019-10-17 12:10:50,867] [WARNING] Not Found: /favicon.ico
+[2019-10-17 12:10:50,874] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2722
+[2019-10-17 12:14:00,129] [INFO] Watching for file changes with StatReloader
+[2019-10-17 12:14:06,510] [INFO] "GET /mqtt HTTP/1.1" 200 1192
+[2019-10-17 12:14:10,695] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:13,203] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:14,804] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:16,781] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:18,289] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:19,955] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:21,672] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:23,432] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:24,893] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:25,335] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:26,705] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-17 12:14:27,555] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:28,765] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:29,464] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:30,776] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:31,498] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:59,035] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:14:59,770] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:15:01,045] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:15:25,581] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:15:33,051] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-17 12:15:39,967] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-18 03:41:54,386] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-18 03:41:54,881] [WARNING] Not Found: /favicon.ico
+[2019-10-18 03:41:54,885] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2722
+[2019-10-18 03:42:03,300] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-18 03:42:42,735] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-18 03:42:45,270] [INFO] "GET /mqtt HTTP/1.1" 200 1217
+[2019-10-18 03:42:47,113] [INFO] "GET /mqtt HTTP/1.1" 200 1218
+[2019-10-18 03:42:48,997] [INFO] "GET /mqtt HTTP/1.1" 200 1218

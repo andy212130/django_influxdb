@@ -86,9 +86,9 @@ DATABASES = {
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 	'NAME': 'test_data',
 	'USER': 'root',
-	'PASSWORD': '',
+	'PASSWORD': 'admin',
         'PORT': '3306',
-	'HOST': '172.17.0.2',
+	'HOST': 'localhost',
 #	'OPTIONS': {"SET sql_mode='STRICT_TRANS_TABLES'",}, 
     }
 }

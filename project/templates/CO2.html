@@ -1,0 +1,49 @@
+<!--CO2.html-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<title>show</title>
+<head>
+        <h1>show CO2</h1>
+        <p>
+        <h3><a href='/'>return</a></h3>
+        </p>
+
+</head>
+<!--<body onload="start()" >-->
+<body>
+        <div>
+                <h2>CO2:<span id='c'>{{data}}</span<h2>
+        </div>
+        
+</body>
+<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+        function data(){
+               // var data_t = (Math.random()*10.00+30).toFixed(2);
+               // var data_h = (Math.random()*48.00+10).toFixed(2);
+                document.getElementById("c").innerHTML=data_t;
+                    $.ajax({
+        		type: 'GET',
+        		url: "mqtt" ,
+    			}).done(function(data){
+        		console.log('success',data); 
+			if(data){
+        			document.getElementById("c").innerHTML = data;
+			}
+			else{
+				console.log('no data');
+			}
+    			}
+    			).fail(function() {
+        		console.log('fail'); 
+
+      			});  
+        }
+        function start(){
+                startcalc = setInterval(data,5000);             
+        }
+</script>-->
+</html>
+~             

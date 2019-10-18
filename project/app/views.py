@@ -13,9 +13,20 @@ from datetime import datetime
 from django.conf import settings
 from random import *
 from django.views.decorators.csrf import csrf_exempt
+from mqtt_test import mqtt_sub as sub
 
 # Create your views here.
+#---------------------------------------------
+#mqtt
+@csrf_exempt
+def mqtt(request):
+    #data = sub.getdata()
+    data = sub.start()
+    print(data)
+#    sub.stop()
+    return render(request,'CO2.html',locals())
 
+#---------------------------------------------
 def homepage(request):
     posts = Post.objects.all()
     now = datetime.now()
