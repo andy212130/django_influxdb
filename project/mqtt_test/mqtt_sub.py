@@ -1,9 +1,11 @@
 #subscribe
 import paho.mqtt.client as mqtt
+from random import random
 
 host='172.17.0.2'
 port=1883
-data=0.00
+data= format(random()*30, '.2f')
+
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     client.subscribe("aaa")
